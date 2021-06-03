@@ -19,8 +19,10 @@ public class TaskNo5_2 {
             switch (Alp) {
                 case 5:
                     System.out.println("Aprobado");
+                    break;
                 case 6:
                     System.out.print("Bien");
+                    break;
             }
         }
 }
