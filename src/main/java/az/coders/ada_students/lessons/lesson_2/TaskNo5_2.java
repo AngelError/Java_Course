@@ -10,7 +10,7 @@ public class TaskNo5_2 {
             int Alp = num.nextInt();
 
             if (Alp == 1 || Alp == 2 || Alp == 3 || Alp == 4 || Alp == 0)
-                System.out.println("Suspenso");
+                System.out.println("SUSpenso");
             else if (Alp == 7 || Alp == 8)
                 System.out.print("Notable");
             else if (Alp == 9 || Alp == 10)
