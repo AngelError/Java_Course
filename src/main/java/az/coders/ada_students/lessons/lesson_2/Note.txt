@@ -1,0 +1,10 @@
+1. psvm - public static main void
+2. sout - system out print
+3. souf - System.out.printf("");
+4. conf. - multiple class üçün elverişli
+5. 8 types: byte short character int double float(yuvarlaqlaşdırmır) Long boolean(1 bit yer);
+ // type size yazarsan
+6 bios - kompu işe düşmeye help edir
+7 picture --- longdan -> boolean (azalma)
+
+
