@@ -8,7 +8,7 @@ import java.util.Scanner;
 //        Input number: 3
 //        Expected Output :
 //        Wednesday
-public class task2 {
+public class Task2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

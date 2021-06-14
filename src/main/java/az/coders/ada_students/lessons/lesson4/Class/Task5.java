@@ -4,7 +4,7 @@ package az.coders.ada_students.lessons.lesson4.Class;
 
 import java.util.Scanner;
 
-public class task5 {
+public class Task5 {
     public static void main(String[] args) {
         int sum = 0;
         Scanner scan =  new Scanner(System.in);

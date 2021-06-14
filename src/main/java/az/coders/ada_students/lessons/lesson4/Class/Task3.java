@@ -8,7 +8,7 @@ import java.util.Scanner;
 //        Input a year: 2016
 //        Expected Output :
 //        February 2016 has 29 days
-public class task3 {
+public class Task3 {
         public static void main(String[] args) {
                 Scanner scan = new Scanner(System.in);
 
@@ -17,17 +17,19 @@ public class task3 {
                 System.out.println("Enter The Year: ");
                 int year = scan.nextInt();
 
-                if (month == 2) {
-                        if ((year % 4 != 0) || (year % 400 != 0) || (year %100 != 0))
-                                System.out.println("Febuary, " + year + " has 28 days");
-                        else
-                                System.out.println("Febuary, " + year + " has 29 days");
-                }
+
 
                 switch (month) {
                         case 1:
                                 System.out.println("January, " + year + " has 31 days");
                                 break;
+                        case 2:
+                        {
+                                        if ((year % 4 != 0) || (year % 400 != 0) || (year %100 != 0))
+                                                System.out.println("Febuary, " + year + " has 28 days");
+                                        else
+                                                System.out.println("Febuary, " + year + " has 29 days");
+                        }
                         case 3:
                                 System.out.println("March, " + year + " has 31 days");
                                 break;

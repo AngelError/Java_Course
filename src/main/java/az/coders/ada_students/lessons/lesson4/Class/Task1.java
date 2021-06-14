@@ -10,7 +10,7 @@ import java.util.Scanner;
 //        Input the 3rd number: 87
 //        Expected Output :
 //        The greatest: 87
-public class task1 {
+public class Task1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter Three Numbers: ");

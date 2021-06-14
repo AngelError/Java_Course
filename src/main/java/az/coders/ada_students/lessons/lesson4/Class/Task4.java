@@ -3,7 +3,7 @@ package az.coders.ada_students.lessons.lesson4.Class;
 
 import java.util.Scanner;
 
-public class task4 {
+public class Task4 {
     public static void main(String[] args) {
 
         System.out.println("The First 10 Natural Numbers:");
