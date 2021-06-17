@@ -8,9 +8,9 @@ public class Task1 {
 
         String str = scan.nextLine();
         int a = str.length()/2;
-        if (str.length() % 2 != 0) {
+        if (str.length() % 2 != 0)
             System.out.println(str.substring(a, a+1));
-        }
-        System.out.println(str.substring(a-1, a));
+        else
+            System.out.println(str.substring(a-1, a+1));
     }
 }
