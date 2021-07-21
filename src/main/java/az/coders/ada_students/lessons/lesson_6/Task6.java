@@ -9,9 +9,12 @@ public class Task6 {
 
         int num = scan.nextInt();
         int cnt = 0;
+            CNT(num,cnt);
+    }
+
+    public static void CNT(int num, int cnt) {
         for(int i = 0; i < num; i++) {
             for (int j = 0; j < num; j++) {
-//                System.out.print("* ");
                 System.out.print(cnt++ + " ");
             }
             System.out.println();

@@ -20,11 +20,16 @@ public class Task_3 {
         int n = 1;
 
         for (int i = 1; i <= num; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(n + " ");
-                n++;
-            }
+            Algo(i,num,n);
             System.out.println();
         }
+    }
+
+    public static int Algo(int i, int num, int n) {
+        for (int j = 1; j <= i; j++) {
+            System.out.print(n + " ");
+            n++;
+        }
+        return 0;
     }
 }

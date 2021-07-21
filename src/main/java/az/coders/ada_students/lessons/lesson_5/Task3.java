@@ -8,10 +8,14 @@ public class Task3 {
         int num = scan.nextInt();
 
         for(int i = 0; i < num; i++) {
-            for (int j = 0; j < num; j++){
-                System.out.print("* ");
-            }
+           Stars(num);
             System.out.println();
+        }
+    }
+
+    public static void Stars(int num) {
+        for (int j = 0; j < num; j++){
+            System.out.print("* ");
         }
     }
 }

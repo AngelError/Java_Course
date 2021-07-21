@@ -24,34 +24,14 @@ public class Task_5 {
         int num3 = scan.nextInt();
 
         scan.close();
+
+        Message(num1, num2, num3);
+    }
+    public static void Message(int num1, int num2, int num3) {
         if(num1 == num2 && num2 == num3) {
             System.out.println("All numbers are equal");
         } else if (num1 != num2 && num1 != num3 && num2 != num3) {
             System.out.println("All numbers are different");
         } else System.out.println("Neither all are equal or different");
-
-
-    //(using )string can be applied
-    // mueliimden sorus -----> string tetbiqi & for & while
-//        int compareCount = 0;
-//       int cnt =1;
-//       while (cnt == 3) {
-//           int num = scan.nextInt();
-//           int compare = num;
-//           cnt++;
-//
-//           if( num == compare) {
-//                compareCount++;
-//           }
-//       }
-
-
-    //    for (int i = 1; i <= 3; i++){
-    //        System.out.println("Input No " + i + " number:");
-    //        int newNum = scan.nextInt();
-    //        int num = newNum;
-    //        if(num)
-    //    }
-
     }
 }

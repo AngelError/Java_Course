@@ -7,8 +7,13 @@ public class Task4 {
         Scanner scan = new Scanner(System.in);
         int year = scan.nextInt();
 
+        LeapYear(year);
+
+    }
+
+    public static void LeapYear(int year) {
         if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0)
             System.out.println(year + " is Leap Year!");
-        System.out.println(year + " is not Leap Year!");
+        else System.out.println(year + " is not Leap Year!");
     }
 }

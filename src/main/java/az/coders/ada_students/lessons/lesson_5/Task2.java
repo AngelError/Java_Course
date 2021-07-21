@@ -7,12 +7,17 @@ public class Task2 {
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
         int sum = 1 + num;
-        for(int i = 2; i < num; i++) {
-            if(num % i == 0) {
+
+        System.out.println(Output(num,sum));
+    }
+
+    public static int Output(int num, int sum) {
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
                 sum += i;
             }
         }
-        System.out.println(sum);
+        return sum;
     }
 
 }

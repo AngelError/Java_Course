@@ -12,12 +12,17 @@ import java.util.Scanner;
 //        Increasing order
 public class Task_6 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int newNumMin = Integer.MIN_VALUE;
+
         int cnt = 0;
         int cntMin = 0;
         int cntMax = 0;
 
+            MinMaxNum(cntMin,cntMax,cnt);
+    }
+
+    public static void MinMaxNum(int cntMin, int cntMax, int cnt) {
+        int newNumMin = Integer.MIN_VALUE;
+        Scanner scan = new Scanner(System.in);
         while (cnt < 3) {
             int num = scan.nextInt();
             if (newNumMin <= num) {
@@ -26,7 +31,7 @@ public class Task_6 {
             } else cntMax++;
             cnt++;
         }
-        scan.close();
+
         if (cntMin == 3) System.out.println("increasing");
         else if (cntMax == 2) System.out.println("decreasing");
         else System.out.println("Neither increasing or decreasing order");

@@ -8,6 +8,9 @@ public class Task1 {
 
         String str = scan.nextLine();
         int a = str.length()/2;
+        Method(str,a);
+    }
+    public static void Method(String str, int a) {
         if (str.length() % 2 != 0)
             System.out.println(str.substring(a, a+1));
         else

@@ -11,7 +11,7 @@ public class JavaLoopsII {
             int b = in.nextInt();
             int n = in.nextInt();
 
-            for (int j = 1; j <= n; j+=2) {
+            for (int j = 1; j < Math.pow(2,n); j*=2) {
                 a += (j * b);
                 System.out.print(a + " ");
             }

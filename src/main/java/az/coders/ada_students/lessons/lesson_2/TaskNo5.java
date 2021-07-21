@@ -8,7 +8,10 @@ public class TaskNo5 {
 
         System.out.println("Input an alphabet: ");
         char Alp = alpha.next().charAt(0);
+        Message(Alp);
+    }
 
+    public static void Message(char Alp) {
         if((Alp >= 'a' && Alp <= 'z') || (Alp >= 'A' && Alp <= 'Z')) {
             if (Alp == 'a' || Alp == 'e' || Alp == 'i' || Alp == 'o' || Alp == 'u'
                     || Alp == 'A' || Alp == 'E' || Alp == 'I' || Alp == 'O' || Alp == 'U')
@@ -19,4 +22,5 @@ public class TaskNo5 {
         else
             System.out.println("Error");
     }
+
 }

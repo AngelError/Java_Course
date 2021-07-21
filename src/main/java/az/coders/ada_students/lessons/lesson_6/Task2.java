@@ -10,11 +10,16 @@ public class Task2 {
         int cnt = 0;
         int a = str.length()-1;
 
+
+        System.out.println(CNT(a,cnt,str));
+    }
+
+    public static int CNT(int a, int cnt, String str) {
         while (a >= 0) {
             if (str.charAt(a) == 'a'|| str.charAt(a) == 'e' || str.charAt(a) == 'u' || str.charAt(a) == 'i' || str.charAt(a) == 'o')
                 cnt++;
             a--;
         }
-        System.out.println(cnt);
+        return cnt;
     }
 }

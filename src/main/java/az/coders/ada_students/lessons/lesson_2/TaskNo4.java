@@ -14,11 +14,9 @@ public class TaskNo4 {
         public static void main(String[] args) {
             int max = 100;                                                             // according to the instruction
             int min = 0;
-
-            byte difference = (byte) (max - min);                                       // for calculating random number
+                                    // for calculating random number
 
             Scanner taskNo4 = new Scanner(System.in);                                  // scanning user number
-            byte randomNumber = (byte) Math.floor(Math.random() * (difference + 1) + min);     // for defining random number
 
             System.out.println("Let the game begin!");                                  // according to the instruction
             System.out.println("Enter Your Number: ");
@@ -26,21 +24,42 @@ public class TaskNo4 {
             while (taskNo4.hasNextByte()) {
                 byte number = taskNo4.nextByte();
 
-                if (number == randomNumber) {
-                    System.out.println("Congratulations, Nabat!");
+                if (number == RandomNum(max,min)) {
+                    Output1();
                     break;
                 }
                 else {
-                    if(number > randomNumber) {
-                        System.out.println("Your number is too big. Please, try again!");
+                    if(number > RandomNum(max,min)) {
+                        Output2();
                     }
-                    else if (number < randomNumber){
-                        System.out.println("Your number is too small. Please, try again!");
+                    else if (number < RandomNum(max,min)){
+                        Output3();
                     }
-                    System.out.println("Enter Your New Number:");
+                    Output4();
                 }
             }
         }
 
+        public static byte RandomNum(int max, int min) {
+            byte difference = (byte) (max - min);
+            byte randomNumber = (byte) Math.floor(Math.random() * (difference + 1) + min);
+            return randomNumber;
+        }
+
+        public static void Output1() {
+            System.out.println("Congratulations, Nabat!");
+        }
+
+        public static void Output2() {
+            System.out.println("Your number is too big. Please, try again!");
+        }
+
+        public static void Output3() {
+            System.out.println("Your number is too small. Please, try again!");
+        }
+
+        public static void Output4() {
+            System.out.println("Enter Your New Number:");
+        }
     }
 

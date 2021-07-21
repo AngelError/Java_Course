@@ -10,11 +10,15 @@ public class Task3 {
         int cnt = 1;
         long pentagon = 1;
 
+        Method(pentagon,cnt);
+
+    }
+
+    public static void Method(long pentagon, int cnt) {
         for (int i = 1; i <= 50; i++) {
             System.out.print(i + " number: ");
             System.out.println(pentagon);
             pentagon += cnt += 3;
         }
-
     }
 }

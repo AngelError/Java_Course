@@ -16,16 +16,25 @@ public class Task_2 {
 
         for (int i = 1; i <= num; i++) {
 
-            for (int j = num - i; j >= 1; j--) {
-                System.out.print(" ");
-            }
+            Algo_1(num,i);
 
-            for (int j = 1; j <= i; j++) {
-                System.out.print(i + " ");
-            }
+            Algo_2(i);
 
-                System.out.println();
+            System.out.println();
         }
     }
+    public static int Algo_1(int num, int i){
+        for (int j = num - i; j >= 1; j--) {
+            System.out.print(" ");
+        }
+        return 0;
+    }
+    public static int Algo_2(int i){
+        for (int j = 1; j <= i; j++) {
+            System.out.print(i + " ");
+        }
+        return 0;
+    }
+
 }
 

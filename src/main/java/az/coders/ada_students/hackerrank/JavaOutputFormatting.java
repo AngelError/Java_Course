@@ -12,12 +12,7 @@ public class JavaOutputFormatting {
             System.out.print(s1);
             for (int j = 1; j<=15-s1.length(); j++)
                 System.out.print(" ");
-//            if (x>9 && x<100)
-//                System.out.println("0"+x);
-//            else if (x > 99)
-//                System.out.println(x);
-//            else
-//                System.out.println("00"+x);
+
             if (x / 10 == 0)
                 System.out.println("00"+x);
             else if (x / 100 == 0)
