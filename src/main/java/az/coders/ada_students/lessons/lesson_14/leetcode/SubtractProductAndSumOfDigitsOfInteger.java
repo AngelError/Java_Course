@@ -20,7 +20,7 @@ class Solution1 {
     private int num;
 
     public Solution1(int n ) {
-        this.num = 234;
+        this.num = n;
     }
 
     public int subtractProductAndSum() {

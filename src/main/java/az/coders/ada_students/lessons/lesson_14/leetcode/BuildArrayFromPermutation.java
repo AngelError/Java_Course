@@ -4,19 +4,26 @@ import java.util.Scanner;
 
 public class BuildArrayFromPermutation {
     public static void main(String[] args) {
-        int[] nums = {0, 2, 1, 5, 3, 4};
-        Solution6 solution6 = new Solution6();
-        for (int i = 0; i < nums.length; i++) {
-            System.out.println(solution6.buildArray(nums));
+
+        Solution6 solution6 = new Solution6(new int[]{0, 2, 1, 5, 3, 4});
+        for (int i = 0; i < 6; i++) {
+            System.out.println(solution6.buildArray()[i]);
         }
     }
 }
 
 class Solution6 {
-    public int[] buildArray(int[] nums) {
-        int[] ans = new int[nums.length];
-        for (int i = 0; i < nums.length ; i++) {
-            ans[i] = nums[nums[i]];
+
+    private final int[] arr;
+
+    public Solution6(int[] arr) {
+        this.arr = arr;
+    }
+
+    public int[] buildArray() {
+        int[] ans = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            ans[i] = arr[arr[i]];
         }
         return ans;
     }

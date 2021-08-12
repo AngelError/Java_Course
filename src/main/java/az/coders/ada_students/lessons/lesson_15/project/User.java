@@ -1,8 +1,8 @@
-package az.coders.ada_students.lessons.lesson_13.exercise;
+package az.coders.ada_students.lessons.lesson_15.project;
 
 import java.util.Scanner;
 
-public class Main {
+public class User {
     public static void main(String[] args) {
 
         String username;
@@ -13,6 +13,10 @@ public class Main {
         int userinternship;
         String userlanguage;
         String useraddress;
+
+
+
+
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("---------------- > Job Application < ----------------");

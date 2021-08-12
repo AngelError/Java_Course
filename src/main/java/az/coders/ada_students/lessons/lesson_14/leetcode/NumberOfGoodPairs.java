@@ -1,24 +1,28 @@
 package az.coders.ada_students.lessons.lesson_14.leetcode;
 
-import java.util.Scanner;
-
 public class NumberOfGoodPairs {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        Solutions solution = new Solutions();
+        Solutions solution = new Solutions(new int[]{1,2,3,1,1,3});
 
-        int[] nums = {1, 2, 3, 1, 1, 3};
-        System.out.println(solution.numIdenticalPairs(nums));
+
+        System.out.println(solution.numIdenticalPairs());
     }
 }
 
 class Solutions {
-    public int numIdenticalPairs(int[] nums) {
+
+    private int[] num;
+
+    public Solutions(int[] nums) {
+        int[] num = nums;
+    }
+
+    public int numIdenticalPairs() {
         int cnt=0;
-        for (int i = 0; i <nums.length ; i++) {
+        for (int i = 0; i <num.length ; i++) {
             for (int j = 0; j < i ; j++) {
-                if (nums[i] == nums[j])
+                if (num[i] == num[j])
                     cnt += 1;
             }
         }

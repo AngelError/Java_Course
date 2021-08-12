@@ -57,6 +57,10 @@ public class Data {
             return "Inexperienced!";
     }
 
+//    public Data() {
+//        System.out.println("hello");
+//    }
+
     public void setInternship(int internship) {
         this.internship = internship;
     }
